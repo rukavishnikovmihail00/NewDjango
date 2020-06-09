@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles'
 ]
 
 MIDDLEWARE = [
@@ -59,7 +59,9 @@ ROOT_URLCONF = 'DjangoDB.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(PROJECT_ROOT, 'templates') # Добавляем эту строчку, чтобы сменить путь к шаблонам приложения
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
