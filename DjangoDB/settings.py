@@ -35,6 +35,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'mainApp',
+    'news',
     'articles.apps.ArticlesConfig',
     'grappelli',
     'django.contrib.admin',
